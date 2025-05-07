@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitry_Rychkov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content-first.css">
+    <link rel="stylesheet" href="css/content-portfolio.css">
+    <link rel="stylesheet" href="css/content-accordion.css">
+    <link rel="stylesheet" href="css/content-contacts.css">
+    
+    <script src="./js/accordion.js" defer></script>
+    <script src="./js/mobile-menu.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <img src="./img/logo.svg" alt="">
+            <div class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#portfolio">портфолио</a></li>
+                    <li><a href="#competencies">компетенции</a></li>
+                    <button onclick="scrollToSection('contacts')">Контакты</button>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#portfolio">портфолио</a></li>
+                    <li><a href="#competencies">компетенции</a></li>
+                    <li><button onclick="scrollToSection('contacts')">Контакты</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+        
+            <div class="content-first">
+                <div class="title-block">
+
+                    <div class="title-row">
+                        <img src="./img/prev/first-last-name.svg" alt="">
+                    </div>
+
+                    <div class="title-row">
+                        <img src="./img/prev/title_text_1_2.svg" alt="">  
+                    </div>
+
+                    <div class="title-row">
+                        <img src="./img/prev/title_text_2.svg" alt="">
+                    </div>
+
+                </div>
+                <div class="content-text">
+                    <p>Студент Международного-Восточно Европейского Колледжа</p>
+                </div>
+            </div>
+
+            <div class="content" id="portfolio">
+                <h1>ПОРТФОЛИО</h1>
+                <div class="content-text content-2">
+                    <p>Проекты: от идеи до реализации</p>
+                </div>
+                <div class="content-block">
+                    <div class="image-row-1">
+                        <a href="https://github.com/Prospero03/React_Frontend_MDK.09.01" target="_blank" class="box-image">
+                            <img src="./img/portfolio/work_1.jpg" alt="Frontend Auto">
+                        </a>
+                        <a href="https://original0338.ru/" target="_blank" class="box-image">
+                            <img src="./img/portfolio/work_2.jpg" alt="Интернет Магазин">
+                        </a>
+                    </div>
+            
+                    <div class="image-row-2">
+                        <a href="https://github.com/Prospero03/Mortgage" target="_blank" class="box-image">
+                            <img src="./img/portfolio/work_3.jpg" alt="Калькулятор">
+                        </a>
+                        <a href="https://github.com/Prospero03/BookStore" target="_blank" class="box-image">
+                            <img src="./img/portfolio/work_4.jpg" alt="Wordpress">
+                        </a>
+                        <a href="https://github.com/Prospero03?tab=repositories" class="box-image" id="button-portfolio_block">
+                            <div class="green-box">
+                                Больше проектов
+                            </div>
+                        </a>
+                    </div>
+            
+                    <a id="button-portfolio" href="https://github.com/Prospero03?tab=repositories" target="_blank">Больше проектов</a>
+                </div>
+            </div>
+
+
+            <div class="content" id="competencies">
+                <h1>Компетенции</h1>
+                <div class="content-text">
+                    <p>Что уже умею → Что осваиваю → Куда движусь </p>
+                </div>
+                <div class="accoridion-container">
+                    <div class="content-list">
+                        <div class="list-item">
+
+                            <div class="list-header">
+                                <div class="icon-container">
+                                    <img src="./img/content_2/blue-plus.svg" alt="" class="icon">
+                                </div>
+                                <h3>ВЕБ-РАЗРАБОТКА</h3>
+
+                            </div>
+                            <div class="list-content">
+                                <p>Frontend: HTML5, CSS3 (Flexbox, Grid)</p>
+                                <p>Основы JavaScript,  React. </p>
+                                <p>Backend: опыт с MERN-стеком .  </p>
+                                <p>Инструменты: Git, npm, Vite, работа с MongoDB.</p>
+                                <p>Конструкторы: разработка сайтов на Tilda</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-list">
+                        <div class="list-item">
+
+                            <div class="list-header">
+                                <div class="icon-container">
+                                    <img src="./img/content_2/green-plus.svg" alt="" class="icon">
+                                </div>
+                                <h3>ГРАФИЧЕСКИЙ ДИЗАЙН</h3>
+
+                            </div>
+                            <div class="list-content">
+                                <p>Работа с векторной графикой (логотипы, полиграфия) в CorelDraw и Adobe Illustrator. </p>
+                                <p>Обработка фотографий, ретушь, создание мокапов в Adobe Photoshop.  </p>
+                                <p>Проектирование интерфейсов в Figma.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-list">
+                        <div class="list-item">
+
+                            <div class="list-header">
+                                <div class="icon-container">
+                                    <img src="./img/content_2/gray-plus.svg" alt="" class="icon">
+                                </div>
+                                <h3>АКТУАЛЬНОЕ ОБУЧЕНИЕ</h3>
+
+                            </div>
+                            <div class="list-content">
+                                <p>Изучение WordPress и PHP </p>
+                                <p>Освоение C# (базовый синтаксис, ООП).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+
+    </div>
+
+    <div class="main-container" id="contacts">
+        <div class="container">
+            <main>
+                <div id="black" class="content">
+                    <h1 id="content-end">DIGITAL<br> Площадки</h1>
+                    <div class="content-text content-2">
+                        <p>Где меня можно найти? <br>Мои творческие пространства</p>
+                    </div>
+
+                    <div class="content-boxs">
+                        <a href="https://github.com/Prospero03?ysclid=macga1ukfd721056665" target="_blank" class="content-box">
+                            <img id="img-github" src="./img/contact/github.svg" alt="GitHub">
+                        </a>
+                        <a href="https://kwork.ru/user/origin0338" target="_blank" class="content-box">
+                            <img src="./img/contact/kwork.svg" alt="Kwork">
+                        </a>
+                        <a href="https://www.behance.net/dimarychow" target="_blank" class="content-box">
+                            <img src="./img/contact/behance.svg" alt="Behance">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="black" class="content">
+                    <div class="contact-box-green">
+                        
+                            <div class="row-rhombus">
+                                <img src="./img/contact/rhombus-green.png" alt="">
+                                <img src="./img/contact/rhombus-green.png" alt="">
+                                <img src="./img/contact/rhombus-green.png" alt="">
+                            </div>
+                            <div class="title-contacts">
+                                <h1>Обсудим</h1>
+                                <h1>Вашу идею</h1>
+                            </div>
+                            
+
+                            <div class="row-buttons">
+                                <a id="button-contacts-1" href="mailto:dimarik03.00rb@gmail.com">email</a>
+                                <a id="button-contacts-2" href="https://t.me/rucha0338" target="_blank">telegram</a>
+                                
+                            </div>
+                        
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

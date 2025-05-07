@@ -1,0 +1,151 @@
+
+.image-row-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    gap:10px;
+}
+.image-row-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    gap:10px;
+}
+
+.image-row-1 .box-image {
+    height: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.image-row-1 .box-image img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-row-2 .box-image {
+    height: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.image-row-2 .box-image img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-image .green-box {
+    background-color: #D7FD52;
+    height: 100%;
+    min-width: 100%;
+    transition: all ease 0.5s;
+}
+
+
+#button-portfolio_block{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+    
+}
+
+#button-portfolio_block:hover{
+    color: white;
+    background-color:  #4162EB;
+    
+}
+.box-image .green-box:hover {
+    background-color: #4162EB;
+    
+}
+
+#button-portfolio{
+    display: none;
+    width: 100%;
+    background-color:  #D7FD52;
+    text-align: center;
+    padding: 30px 0px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+#button-portfolio:hover{
+    color: white;
+    background-color:  #4162EB;
+    
+}
+
+
+.image-row-1 a.box-image,
+.image-row-2 a.box-image {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-row-1 a.box-image img,
+.image-row-2 a.box-image img {
+    transition: transform 0.3s ease;
+}
+
+.image-row-1 a.box-image:hover img,
+.image-row-2 a.box-image:hover img {
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width:659px) {
+    #button-portfolio{
+        display: block;
+
+    }
+    #button-portfolio_block{
+        display: none;
+    }
+}
+
+.image-row-1 {
+    align-items: stretch; /* Растягивает элементы по высоте */
+}
+.image-row-2 {
+    align-items: stretch; /* Растягивает элементы по высоте */
+}
+
+.green-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Занимает 100% высоты родителя */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-image {
+    position: relative;
+    min-height: 100%; /* Занимает всю доступную высоту */
+    overflow: hidden; /* Обрезает содержимое, если выходит за границы */
+}
+
+@media only screen and (max-width:977px) {
+    .image-row-2 .box-image:nth-child(2){
+        display: none;
+    }
+}
